@@ -1,0 +1,29 @@
+@@include('./_parts/_head.html', { "pagetitle": "Pages", "bodyclass": "", "index": true })
+
+	<style>
+		body * {
+			font-family: 'Ubuntu', sans-serif !important;
+		}
+
+		h1 {
+			font-weight: bold;
+		}
+
+		.uk-button:hover {
+			background: #85c83b;
+			border-color: #85c83b;
+			color: #fff;
+		}
+	</style>
+
+	<!-- Custom HTML -->
+
+	<div class="uk-container">
+
+		<h1 class="uk-heading-primary uk-margin-large-top">Heading Primary</h1>
+
+		@@include('./_parts/index-list/_index-list.html')
+
+	</div>
+
+	@@include('./_parts/_footer.html')
