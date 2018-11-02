@@ -1,23 +1,23 @@
-<h1><strong>Elesmer</strong> <br>Startup HTML template based on Gulp & UI Kit</h1>
+<h1><strong>Elesmera</strong> <br>Startup HTML template based on Gulp & UI Kit</h1>
 
-<!-- <p>
-	<img src="https://raw.githubusercontent.com/agragregra/Elesmer-4/master/app/img/preview.jpg" alt="Start HTML Template">
-</p> -->
+<p>
+	<img src="app/img/preview.jpg" alt="Start HTML Template">
+</p>
 
 <p>Author: <a href="http://andriy-pavlyshyn.com/" target="_blank">Andriy Pavlyshyn</a></p>
 
-<p>Elesmer is all-inclusive start HTML5 template with Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
+<p>Elesmera is all-inclusive start HTML5 template with Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
 
-<p><strong>Elesmer</strong> Start Template uses the best practices of web development.</p>
+<p><strong>Elesmera</strong> Start Template uses the best practices of web development.</p>
 
 <p>Cross-browser compatibility: IE9+.</p>
 
 <p>The template uses a Sass with <strong>Sass</strong> or <strong>Scss</strong> syntax (optional).</p>
 
-<h2>How to use Elesmer</h2>
+<h2>How to use Elesmera</h2>
 
 <ol>
-	<li><a href="https:https://github.com/Elesmer/Elesmer---star-templete/archive/master.zip">Download</a> <strong>Elesmer</strong> from GitHub;</li>
+	<li><a href="https:https://github.com/Elesmer/Elesmer---star-templete/archive/master.zip">Download</a> <strong>Elesmera</strong> from GitHub;</li>
 	<li>Install Node Modules: <strong>npm i</strong>;</li>
 	<li>Run the template: <strong>gulp</strong>.</li>
 </ol>
