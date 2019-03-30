@@ -1,0 +1,50 @@
+header
+  position: fixed
+  width: 100%
+  height: 120px
+  background: $accent
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  -webkit-transition: all 0.4s ease
+  transition: all 0.4s ease
+
+  .burger
+    height: 50px
+    width: 50px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    justify-content: center
+    cursor: pointer
+
+    &:hover
+      .burger-line
+        &:last-child
+          width: 55%
+
+  .burger-line
+    height: 1px
+    background: $white
+    width: 55%
+    margin: 5px 0
+    transition: width .5s
+
+    &:last-child
+      width: 30%
+
+header.sticky
+  height: 90px
+
+.header__content
+  width: 100%
+
+.number
+  margin-right: 50px
+
+  a
+    &:hover
+      text-decoration: none
