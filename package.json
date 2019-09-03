@@ -22,5 +22,8 @@
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "imagemin-pngquant": "^6.0.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.2.0"
   }
 }
