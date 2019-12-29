@@ -4,7 +4,7 @@
 	<img src="app/img/preview.jpg" alt="Start HTML Template">
 </p>
 
-<p>Author: <a href="http://andriy-pavlyshyn.com/" target="_blank">Andriy Pavlyshyn</a></p>
+<p>Author: <a href="http://andrii-pavlyshyn.com/" target="_blank">Andrii Pavlyshyn</a></p>
 
 <p>Elesmera is all-inclusive start HTML5 template with Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
 
