@@ -47,11 +47,8 @@ gulp.task('styles', function() {
     .pipe(sass({
       outputStyle: 'expanded'
     }).on("error", notify.onError()))
-    .pipe(rename({
-      suffix: '.min',
-      prefix: ''
-    }))
     .pipe(autoprefixer(['last 15 versions']))
+    .pipe(gulp.dest('app/css'))
     .pipe(cleancss({
       level: {
         1: {
@@ -59,6 +56,10 @@ gulp.task('styles', function() {
         }
       }
     })) // Opt., comment out when debugging
+    .pipe(rename({
+      suffix: '.min',
+      prefix: ''
+    }))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.stream())
 });
@@ -70,8 +71,10 @@ gulp.task('scripts', function() {
 			'app/libs/uikit/uikit-icons.min.js',
       'app/js/common.js', // Always at the end
     ])
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest('app/js'))
     .pipe(concat('scripts.min.js'))
-    // .pipe(uglify()) // Mifify js (opt.)
+    .pipe(uglify()) // Mifify js (opt.)
     .pipe(gulp.dest('app/js'))
     .pipe(browserSync.reload({
       stream: true
