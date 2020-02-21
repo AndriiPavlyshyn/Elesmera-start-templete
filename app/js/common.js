@@ -4,13 +4,13 @@ $(document).ready(function () {
 });
 
 // Resize sticky header
-$(window).scroll(function() {
-  if ($(this).scrollTop() > 250) {
-    $('header').addClass("sticky");
-  } else {
-    $('header').removeClass("sticky");
-  }
-});
+// $(window).scroll(function() {
+//   if ($(this).scrollTop() > 250) {
+//     $('header').addClass("sticky");
+//   } else {
+//     $('header').removeClass("sticky");
+//   }
+// });
 
 /* To top button */
 
