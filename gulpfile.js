@@ -1,20 +1,22 @@
 var syntax = 'sass', // Syntax: sass or scss;
-  gulpversion = '4'; // Gulp version: 3 or 4
+    gulpversion = '4'; // Gulp version: 3 or 4
 
 
-var gulp = require('gulp'),
-  gutil = require('gulp-util'),
-  sass = require('gulp-sass'),
-  browserSync = require('browser-sync'),
-  concat = require('gulp-concat'),
-  uglify = require('gulp-uglify'),
-  cleancss = require('gulp-clean-css'),
-  rename = require('gulp-rename'),
-  autoprefixer = require('gulp-autoprefixer'),
-  notify = require('gulp-notify'),
-  imagemin = require('gulp-imagemin'),
-  pngquant = require('imagemin-pngquant'),
-  rsync = require('gulp-rsync');
+var gulp         = require('gulp'),
+    gutil        = require('gulp-util'),
+    sass         = require('gulp-sass'),
+    browserSync  = require('browser-sync'),
+    concat       = require('gulp-concat'),
+    uglify       = require('gulp-uglify'),
+    cleancss     = require('gulp-clean-css'),
+    rename       = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer'),
+    notify       = require('gulp-notify'),
+    imagemin     = require('gulp-imagemin'),
+    pngquant     = require('imagemin-pngquant'),
+    rsync        = require('gulp-rsync');
+    gcmq         = require('gulp-group-css-media-queries');
+
 
 gulp.task('browser-sync', function() {
   browserSync({
@@ -48,6 +50,7 @@ gulp.task('styles', function() {
       outputStyle: 'expanded'
     }).on("error", notify.onError()))
     .pipe(autoprefixer(['last 15 versions']))
+    .pipe(gcmq())
     .pipe(gulp.dest('app/css'))
     .pipe(cleancss({
       level: {
@@ -67,8 +70,16 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
   return gulp.src([
       'app/libs/jquery/dist/jquery.min.js',
-			'app/libs/uikit/uikit.min.js',
-			'app/libs/uikit/uikit-icons.min.js',
+      'app/libs/uikit/uikit.min.js',
+      'app/libs/uikit/uikit-icons.min.js',
+
+      //Nice select
+      'app/libs/niceSelect/jquery.nice-select.min.js',
+
+      //InputMask
+      // 'app/libs/inputMask/jquery.inputmask.min.js',
+
+      // Common file
       'app/js/common.js', // Always at the end
     ])
     .pipe(concat('scripts.js'))
