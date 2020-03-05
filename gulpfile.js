@@ -14,7 +14,7 @@ var gulp         = require('gulp'),
     notify       = require('gulp-notify'),
     imagemin     = require('gulp-imagemin'),
     pngquant     = require('imagemin-pngquant'),
-    rsync        = require('gulp-rsync');
+    rsync        = require('gulp-rsync'),
     gcmq         = require('gulp-group-css-media-queries');
 
 
