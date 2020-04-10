@@ -53,7 +53,9 @@ function styles() {
       prefix: ''
     }))
     .pipe(dest('app/css'))
-    .pipe(browserSync.stream())
+		.pipe(browserSync.reload({
+      stream: true
+    }))
 }
 
 // Images
@@ -77,11 +79,11 @@ function scripts() {
       'app/libs/uikit/uikit.min.js',
       'app/libs/uikit/uikit-icons.min.js',
 
-      //Nice select
+      // Nice select
       // 'app/libs/niceSelect/jquery.nice-select.min.js',
 
-      //InputMask
-      // 'app/libs/inputMask/jquery.inputmask.min.js',
+      // MaskedInput
+      // 'app/libs/maskedInput/jquery.maskedinput.min.js',
 
       // Common file
       'app/js/common.js', // Always at the end

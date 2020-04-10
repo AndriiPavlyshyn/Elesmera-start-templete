@@ -29,13 +29,17 @@
 		</div>
 		<ul class="uk-list">
 			<li>
-				<a class="uk-button uk-button-default uk-button-large" href="#">Link</a>
+				<a href="#" class="index-link">link</a>
+			</li>
+			<li>
+				<a href="#" class="index-link">Lorem ipsum dolor.</a>
 			</li>
 		</ul>
 	</div>
 
 	<!-- Index page styles -->
 	<style>
+
 		html,
 		body {
 			background-color: #ebeaef;
@@ -47,19 +51,6 @@
 
 		h1 {
 			font-weight: bold;
-		}
-
-		.uk-button {
-			background: #fff;
-			color: #222;
-			border-radius: 3px;
-			transition: .5s;
-		}
-
-		.uk-button:hover {
-			background: #85c83b;
-			border-color: #85c83b;
-			color: #fff;
 		}
 
 		.index-image-wrapper {
@@ -75,6 +66,38 @@
 		.index-image-wrapper img {
 			width: 60%;
 		}
+
+		.uk-list li {
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			margin-bottom: 30px;
+		}
+
+		.uk-list li:last-child {
+			margin: 0;
+		}
+
+		.index-link {
+			width: auto;
+			text-transform: uppercase;
+			font-weight: bold;
+			display: block;
+			padding: 10px 30px;
+			color: #121212;
+			border-radius: 5px;
+			box-shadow:  13px 13px 26px #d9d9d9, -13px -13px 26px #ffffff;
+			transition: all .5s;
+		}
+
+		.index-link:hover {
+			background-color: #e7e3e3;
+			box-shadow:  13px 13px 26px #d9d9d9, -13px -13px 26px #ffffff;
+			transition: all .5s;
+			color: #121212;
+			text-decoration: none;
+		}
+
 	</style>
 	<script src="js/scripts.min.js"></script>
 </body>
