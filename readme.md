@@ -1,7 +1,7 @@
 <h1><strong>Elesmera</strong> <br>Startup HTML template based on Gulp & UI Kit</h1>
 
 <p>
-	<img src="app/img/preview.jpg" alt="Start HTML Template">
+	<img src="app/img/dest/preview.jpg" alt="Start HTML Template">
 </p>
 
 <p>Author: <a href="http://andrii-pavlyshyn.com/" target="_blank">Andrii Pavlyshyn</a></p>
